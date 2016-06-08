@@ -6,12 +6,17 @@ def repeat(string, num):
 
     Returnerar en ny sträng eller en tom sträng om num är negativt.
     """
-    pass
+    return string * num
 
 
 def bouncer(items):
     """Tar bort alla värden i items (arg 1) som evalueras till False."""
-    pass
+    l = []
+    for item in items:
+        if item:
+            l.append(item)
+    return l
+    # return [item for item in items if item]
 
 
 def largest_of_four(collection):
